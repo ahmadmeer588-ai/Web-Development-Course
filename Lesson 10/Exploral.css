@@ -1,0 +1,51 @@
+body{
+    background-color: black ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+h1{
+    color: #58A6ff;
+}
+/* Attribute Selector */
+a{
+    color: aqua;
+    text-decoration: none;
+}
+a:hover{
+    color: #1f6feb;
+}
+/* Child Selector */
+ul > li{
+    font-weight: bold;
+}
+/* Sibling Selector */
+h1 + p{
+    padding: 15px;
+    background-color: #161b22;
+    border-radius: 5px;
+}
+/* hover Pseuodo class*/
+ul li:hover{
+    color: #4f8cc9;
+}
+/* :nth child(n) Pseuodo Class */
+ul li:nth-child(3){
+    background-color: rgb(43, 38, 38);
+}
+/* :not selector pseuodo class */
+p:not(:first-of-type){
+    text-decoration: underline;
+}
+/* :before pseuodo Element */
+ul li::before{
+    content: "🚀";
+}
+/* :after pseuodo element */
+ul li::after{
+    content: "🌌";
+}
+/* ::first letter pseuodo element */
+p::first-letter{
+    font-size: 200%;
+    color: rgb(185, 123, 182);
+}
