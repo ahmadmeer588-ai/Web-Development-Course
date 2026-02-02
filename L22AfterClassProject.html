@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Sum of Arguments and Math Objects</p>
+    <p id="demo"></p>
+    <script>
+        function sum(){
+            var num = 0;
+            for(var i = 0; i < arguments.length; i++){
+                num += arguments[i];
+            }
+            return num;
+        }
+        document.getElementById("demo").innerHTML = "The sum is: " + sum(10, 20, 30, 40, 50) + "<br>"
+        var value = Math.sin(45);
+        document.write("The sine of 45 degrees is: " + value + "<br>");
+        var value1 = Math.cos(45);
+        document.write("<br>The cosine of 45 degrees is: " + value1 + "<br>");
+        var value2 = Math.tan(45);
+        document.write("<br>The tangent of 45 degrees is: " + value2    + "<br>");
+    </script>
+</body>
+</html>
